@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>GreenCharger UF</title>
+
+    <link rel="stylesheet" href="order.css"/>
+  </head>
+  <body>
+
+    <section class="container">
+      <header>BESTÄLL EN LAGNING!</header>
+      <form class="form"  method="POST">
+        <div class="input-box">
+          <label>Fullständiga Namn</label>
+          <input type="text" placeholder="Ange fullständigt namn" required />
+        </div>
+
+        <div class="input-box">
+          <label>Email Address</label>
+          <input type="text" placeholder="Ange email address" required />
+        </div>
+
+        <div class="column">
+          <div class="input-box">
+            <label>Telefon Nummer</label>
+            <input type="number" placeholder="Ange telefon nummer" required />
+          </div>
+          <div class="input-box">
+            <label>Födelsedatum</label>
+            <input type="date" placeholder="Ange födelsedatum" required />
+          </div>
+        </div>
+        <div class="gender-box">
+          <h3>Sladd Färg</h3>
+          <div class="gender-option">
+            <div class="gender">
+              <input type="radio" id="check-male" name="gender" checked />
+              <label for="check-male">Vit</label>
+            </div>
+            
+            <div class="gender">
+              <input type="radio" id="check-female" name="gender" />
+              <label for="check-female">Svart </label>
+            </div>
+            <div class="gender">
+              <input type="radio" id="check-other" name="gender" />
+              <label for="check-other">Annan</label>
+            </div>
+          </div>
+          
+        </div>
+
+        <div class="input-box address">
+          <label>SladdTyp</label>
+          <input class="buttonmargin" type="text" placeholder="Ange namn på din laddare - [KOLLA UPP I *PRISER*]" required />
+          <div>
+
+          </div>
+          <label>Adress</label>
+          <input type="text" placeholder="Ange gatu adress" required />
+          <div class="column">
+            <div class="select-box">
+              <select>
+                <option hidden>Land</option>
+                <option>Sverige</option>
+                <option>Norge</option>
+                <option>Finland</option>
+                <option>Danmark</option>
+              </select>
+            </div>
+            <input type="text" placeholder="Ange din stad" required />
+          </div>
+          <div class="column">
+            <input type="text" placeholder="Ange din region" required />
+            <input type="number" placeholder="Ange postnummer" required />
+          </div>
+        </div>
+        <button class="submitclass"><p>BESTÄLL</p></button>
+      </form>
+    </section>
+
+  </body>
+</html>
